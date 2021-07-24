@@ -1,20 +1,20 @@
-main.o main.o: ../main.c ../Mydrivers/timers.h \
-  ../Mydrivers/common_macros.h ../Mydrivers/micro_config.h \
-  ../Mydrivers/std_types.h ../Mydrivers/uart.h ../Mydrivers/motor.h \
-  ../Mydrivers/external_eeprom.h ../projectConfig.h
+main.o main.o: ../main.c ../MC2drivers/timers.h \
+  ../MC2drivers/common_macros.h ../MC2drivers/micro_config.h \
+  ../MC2drivers/std_types.h ../MC2drivers/uart.h ../MC2drivers/motor.h \
+  ../MC2drivers/external_eeprom.h ../MC2projectConfig.h
 
-../Mydrivers/timers.h:
+../MC2drivers/timers.h:
 
-../Mydrivers/common_macros.h:
+../MC2drivers/common_macros.h:
 
-../Mydrivers/micro_config.h:
+../MC2drivers/micro_config.h:
 
-../Mydrivers/std_types.h:
+../MC2drivers/std_types.h:
 
-../Mydrivers/uart.h:
+../MC2drivers/uart.h:
 
-../Mydrivers/motor.h:
+../MC2drivers/motor.h:
 
-../Mydrivers/external_eeprom.h:
+../MC2drivers/external_eeprom.h:
 
-../projectConfig.h:
+../MC2projectConfig.h:

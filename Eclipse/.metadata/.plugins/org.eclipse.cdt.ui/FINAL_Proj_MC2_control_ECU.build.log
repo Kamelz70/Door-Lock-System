@@ -1,20 +1,111 @@
-21:18:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+23:02:25 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
 make all 
+Building file: ../MC2drivers/external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/external_eeprom.d" -MT"MC2drivers/external_eeprom.o" -c -o "MC2drivers/external_eeprom.o" "../MC2drivers/external_eeprom.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/external_eeprom.h:6,
+                 from ../MC2drivers/external_eeprom.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC2drivers/external_eeprom.c: In function 'EEPROM_writeString':
+../MC2drivers/external_eeprom.c:110: warning: control reaches end of non-void function
+../MC2drivers/external_eeprom.c: In function 'EEPROM_readString':
+../MC2drivers/external_eeprom.c:128: warning: control reaches end of non-void function
+Finished building: ../MC2drivers/external_eeprom.c
+ 
+Building file: ../MC2drivers/i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/i2c.d" -MT"MC2drivers/i2c.o" -c -o "MC2drivers/i2c.o" "../MC2drivers/i2c.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/i2c.h:7,
+                 from ../MC2drivers/i2c.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MC2drivers/i2c.c
+ 
+Building file: ../MC2drivers/motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/motor.d" -MT"MC2drivers/motor.o" -c -o "MC2drivers/motor.o" "../MC2drivers/motor.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/motor.h:6,
+                 from ../MC2drivers/motor.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MC2drivers/motor.c
+ 
+Building file: ../MC2drivers/timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/timers.d" -MT"MC2drivers/timers.o" -c -o "MC2drivers/timers.o" "../MC2drivers/timers.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../MC2drivers/timers.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC2drivers/timers.c: In function 'Timer_0_setCompareCallBack':
+../MC2drivers/timers.c:123: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_0_setOverflowCallBack':
+../MC2drivers/timers.c:129: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_2_setCompareCallBack':
+../MC2drivers/timers.c:204: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_2_setOverflowCallBack':
+../MC2drivers/timers.c:210: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_1_setCompareACallBack':
+../MC2drivers/timers.c:307: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_1_setCompareBCallBack':
+../MC2drivers/timers.c:313: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_1_setOverflowCallBack':
+../MC2drivers/timers.c:319: warning: function return types not compatible due to 'volatile'
+Finished building: ../MC2drivers/timers.c
+ 
+Building file: ../MC2drivers/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/uart.d" -MT"MC2drivers/uart.o" -c -o "MC2drivers/uart.o" "../MC2drivers/uart.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/uart.h:8,
+                 from ../MC2drivers/uart.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC2drivers/uart.c: In function 'UART_setRecieveCompleteCallback':
+../MC2drivers/uart.c:136: warning: function return types not compatible due to 'volatile'
+../MC2drivers/uart.c: In function 'UART_setTransmitCompleteCallback':
+../MC2drivers/uart.c:142: warning: function return types not compatible due to 'volatile'
+../MC2drivers/uart.c: In function 'UART_setDataEmptyCallback':
+../MC2drivers/uart.c:148: warning: function return types not compatible due to 'volatile'
+Finished building: ../MC2drivers/uart.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:42: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:42: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
 AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   14232 bytes (86.9% Full)
+Program:   10182 bytes (62.1% Full)
 (.text + .data + .bootloader)
 
-Data:         50 bytes (4.9% Full)
+Data:         46 bytes (4.5% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-21:18:13 Build Finished. 0 errors, 0 warnings. (took 283ms)
+23:02:27 Build Finished. 0 errors, 21 warnings. (took 1s.873ms)
 

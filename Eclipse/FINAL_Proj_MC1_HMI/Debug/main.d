@@ -1,20 +1,20 @@
-main.o main.o: ../main.c ../Mydrivers/timers.h \
-  ../Mydrivers/common_macros.h ../Mydrivers/micro_config.h \
-  ../Mydrivers/std_types.h ../Mydrivers/keypad.h ../Mydrivers/lcd.h \
-  ../Mydrivers/uart.h ../projectConfig.h
+main.o main.o: ../main.c ../MC1drivers/timers.h \
+  ../MC1drivers/common_macros.h ../MC1drivers/micro_config.h \
+  ../MC1drivers/std_types.h ../MC1drivers/keypad.h ../MC1drivers/lcd.h \
+  ../MC1drivers/uart.h ../MC1projectConfig.h
 
-../Mydrivers/timers.h:
+../MC1drivers/timers.h:
 
-../Mydrivers/common_macros.h:
+../MC1drivers/common_macros.h:
 
-../Mydrivers/micro_config.h:
+../MC1drivers/micro_config.h:
 
-../Mydrivers/std_types.h:
+../MC1drivers/std_types.h:
 
-../Mydrivers/keypad.h:
+../MC1drivers/keypad.h:
 
-../Mydrivers/lcd.h:
+../MC1drivers/lcd.h:
 
-../Mydrivers/uart.h:
+../MC1drivers/uart.h:
 
-../projectConfig.h:
+../MC1projectConfig.h:

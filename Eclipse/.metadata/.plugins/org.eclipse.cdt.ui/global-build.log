@@ -1,263 +1,71 @@
-21:12:43 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+21:56:47 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
 make all 
 Building file: ../main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../Mydrivers/micro_config.h:22,
-                 from ../Mydrivers/timers.h:7,
-                 from ../main.c:2:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'init_APP_MC2':
-../main.c:24: warning: implicit declaration of function 'LCD_init'
-../main.c: At top level:
-../main.c:47: warning: return type of 'main' is not 'int'
-../main.c: In function 'main':
-../main.c:69: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
-../main.c:69: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
-Finished building: ../main.c
- 
-Building target: FINAL_Proj_MC2_control_ECU.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./Mydrivers/adc.o ./Mydrivers/external_eeprom.o ./Mydrivers/i2c.o ./Mydrivers/icu.o ./Mydrivers/keypad.o ./Mydrivers/lcd.o ./Mydrivers/motor.o ./Mydrivers/spi.o ./Mydrivers/timers.o ./Mydrivers/uart.o  ./main.o   
-Finished building target: FINAL_Proj_MC2_control_ECU.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
-Finished building: FINAL_Proj_MC2_control_ECU.lss
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14232 bytes (86.9% Full)
-(.text + .data + .bootloader)
-
-Data:         50 bytes (4.9% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:12:46 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14088 bytes (86.0% Full)
-(.text + .data + .bootloader)
-
-Data:        202 bytes (19.7% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:12:47 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14232 bytes (86.9% Full)
-(.text + .data + .bootloader)
-
-Data:         50 bytes (4.9% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:12:47 **** Incremental Build of configuration Debug for project Final_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 Final_project.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   13364 bytes (81.6% Full)
-(.text + .data + .bootloader)
-
-Data:         48 bytes (4.7% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:13:33 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14088 bytes (86.0% Full)
-(.text + .data + .bootloader)
-
-Data:        202 bytes (19.7% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:13:34 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../Mydrivers/micro_config.h:22,
-                 from ../Mydrivers/timers.h:7,
-                 from ../main.c:2:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'init_APP_MC2':
-../main.c:24: warning: implicit declaration of function 'LCD_init'
-../main.c: At top level:
-../main.c:47: warning: return type of 'main' is not 'int'
-../main.c: In function 'main':
-../main.c:69: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
-../main.c:69: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
-Finished building: ../main.c
- 
-Building target: FINAL_Proj_MC2_control_ECU.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./Mydrivers/adc.o ./Mydrivers/external_eeprom.o ./Mydrivers/i2c.o ./Mydrivers/icu.o ./Mydrivers/keypad.o ./Mydrivers/lcd.o ./Mydrivers/motor.o ./Mydrivers/spi.o ./Mydrivers/timers.o ./Mydrivers/uart.o  ./main.o   
-Finished building target: FINAL_Proj_MC2_control_ECU.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
-Finished building: FINAL_Proj_MC2_control_ECU.lss
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14232 bytes (86.9% Full)
-(.text + .data + .bootloader)
-
-Data:         50 bytes (4.9% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:13:35 **** Incremental Build of configuration Debug for project Final_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 Final_project.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   13364 bytes (81.6% Full)
-(.text + .data + .bootloader)
-
-Data:         48 bytes (4.7% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:15:16 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14088 bytes (86.0% Full)
-(.text + .data + .bootloader)
-
-Data:        202 bytes (19.7% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:15:16 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../Mydrivers/micro_config.h:22,
-                 from ../Mydrivers/timers.h:7,
-                 from ../main.c:2:
-c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'init_APP_MC2':
-../main.c:24: warning: implicit declaration of function 'LCD_init'
-../main.c: At top level:
-../main.c:47: warning: return type of 'main' is not 'int'
-../main.c: In function 'main':
-../main.c:69: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
-../main.c:69: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
-Finished building: ../main.c
- 
-Building target: FINAL_Proj_MC2_control_ECU.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./Mydrivers/adc.o ./Mydrivers/external_eeprom.o ./Mydrivers/i2c.o ./Mydrivers/icu.o ./Mydrivers/keypad.o ./Mydrivers/lcd.o ./Mydrivers/motor.o ./Mydrivers/spi.o ./Mydrivers/timers.o ./Mydrivers/uart.o  ./main.o   
-Finished building target: FINAL_Proj_MC2_control_ECU.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
-Finished building: FINAL_Proj_MC2_control_ECU.lss
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   14232 bytes (86.9% Full)
-(.text + .data + .bootloader)
-
-Data:         50 bytes (4.9% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:15:17 **** Incremental Build of configuration Debug for project Final_project ****
-make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 Final_project.elf
-AVR Memory Usage
-----------------
-Device: atmega16
-
-Program:   13364 bytes (81.6% Full)
-(.text + .data + .bootloader)
-
-Data:         48 bytes (4.7% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-21:17:41 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
-make all 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../Mydrivers/micro_config.h:22,
-                 from ../Mydrivers/timers.h:7,
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
                  from ../main.c:1:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c:66: warning: return type of 'main' is not 'int'
+../main.c: In function 'set_password':
+../main.c:71: error: 'sendBuffer' undeclared (first use in this function)
+../main.c:71: error: (Each undeclared identifier is reported only once
+../main.c:71: error: for each function it appears in.)
+../main.c: At top level:
+../main.c:75: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:84: warning: comparison between pointer and integer
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:19 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:75: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:84: warning: comparison between pointer and integer
+../main.c:106: error: too few arguments to function 'set_password'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:20 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10186 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:58:48 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:75: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:84: warning: comparison between pointer and integer
 Finished building: ../main.c
  
 Building target: FINAL_Proj_MC1_HMI.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./Mydrivers/adc.o ./Mydrivers/external_eeprom.o ./Mydrivers/i2c.o ./Mydrivers/icu.o ./Mydrivers/keypad.o ./Mydrivers/lcd.o ./Mydrivers/motor.o ./Mydrivers/spi.o ./Mydrivers/timers.o ./Mydrivers/uart.o  ./main.o   
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
 Finished building target: FINAL_Proj_MC1_HMI.elf
  
 Invoking: AVR Create Extended Listing
@@ -270,36 +78,67 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   14098 bytes (86.0% Full)
+Program:   10944 bytes (66.8% Full)
 (.text + .data + .bootloader)
 
-Data:        202 bytes (19.7% Full)
+Data:        192 bytes (18.8% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-21:17:42 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+21:58:49 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10186 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:59:19 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10944 bytes (66.8% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:59:19 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
 make all 
 Building file: ../main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../Mydrivers/micro_config.h:22,
-                 from ../Mydrivers/timers.h:7,
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
                  from ../main.c:2:
 c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-../main.c: In function 'init_APP_MC2':
-../main.c:24: warning: implicit declaration of function 'LCD_init'
-../main.c: At top level:
-../main.c:47: warning: return type of 'main' is not 'int'
+../main.c:46: warning: return type of 'main' is not 'int'
 ../main.c: In function 'main':
-../main.c:69: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
-../main.c:69: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+../main.c:72: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:72: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
 Finished building: ../main.c
  
 Building target: FINAL_Proj_MC2_control_ECU.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./Mydrivers/adc.o ./Mydrivers/external_eeprom.o ./Mydrivers/i2c.o ./Mydrivers/icu.o ./Mydrivers/keypad.o ./Mydrivers/lcd.o ./Mydrivers/motor.o ./Mydrivers/spi.o ./Mydrivers/timers.o ./Mydrivers/uart.o  ./main.o   
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
 Finished building target: FINAL_Proj_MC2_control_ECU.elf
  
 Invoking: AVR Create Extended Listing
@@ -312,33 +151,93 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   14232 bytes (86.9% Full)
+Program:   10186 bytes (62.2% Full)
 (.text + .data + .bootloader)
 
-Data:         50 bytes (4.9% Full)
+Data:         46 bytes (4.5% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-21:17:43 **** Incremental Build of configuration Debug for project Final_project ****
+22:02:03 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
 make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:75: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:85: warning: comparison between pointer and integer
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 Final_project.elf
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
 AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   13364 bytes (81.6% Full)
+Program:   10952 bytes (66.8% Full)
 (.text + .data + .bootloader)
 
-Data:         48 bytes (4.7% Full)
+Data:        192 bytes (18.8% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-21:18:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+22:02:04 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10190 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:09:01 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
@@ -346,16 +245,243 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   14098 bytes (86.0% Full)
+Program:   10952 bytes (66.8% Full)
 (.text + .data + .bootloader)
 
-Data:        202 bytes (19.7% Full)
+Data:        192 bytes (18.8% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-21:18:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+22:09:02 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10190 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:14:30 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:75: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:85: warning: comparison between pointer and integer
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10968 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:14:31 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:16:23 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:75: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10960 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:16:24 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:21:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10968 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:21:14 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
@@ -363,27 +489,1697 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   14232 bytes (86.9% Full)
+Program:   10192 bytes (62.2% Full)
 (.text + .data + .bootloader)
 
-Data:         50 bytes (4.9% Full)
+Data:         46 bytes (4.5% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-21:18:13 **** Incremental Build of configuration Debug for project Final_project ****
+22:21:54 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
 make all 
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 Final_project.elf
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
 AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:   13364 bytes (81.6% Full)
+Program:   10968 bytes (66.9% Full)
 (.text + .data + .bootloader)
 
-Data:         48 bytes (4.7% Full)
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:21:55 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:23:36 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10968 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:23:36 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:24:35 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10968 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:24:36 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:25:58 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10968 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:25:59 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:27:12 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:27:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:27:36 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:27:36 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:46: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:73: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:73: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:29:33 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:29:33 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:36:20 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:36:21 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:40: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:40: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10184 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:36:50 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:36:51 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:40: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:40: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10184 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:39:14 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:39:15 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:40: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:40: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10184 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:39:49 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:39:49 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10182 bytes (62.1% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:40:30 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:40:31 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10182 bytes (62.1% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:41:15 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:41:15 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10184 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:10 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:11 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10184 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:42 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:42 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:52 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:42:52 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:44:55 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:44:57 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:46:48 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:45: error: too few arguments to function 'set_password'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:46:48 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:47:08 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10968 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:47:09 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:22 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:23 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:46 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:47 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10192 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:50:16 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:50:16 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10182 bytes (62.1% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:51:12 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10956 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:51:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../MC2drivers/motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/motor.d" -MT"MC2drivers/motor.o" -c -o "MC2drivers/motor.o" "../MC2drivers/motor.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/motor.h:6,
+                 from ../MC2drivers/motor.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MC2drivers/motor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:41: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:41: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10182 bytes (62.1% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:55:30 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10960 bytes (66.9% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:55:31 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:45: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:45: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10642 bytes (65.0% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:57:10 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11190 bytes (68.3% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:57:11 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10642 bytes (65.0% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:58:56 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11190 bytes (68.3% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:58:57 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:45: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:45: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10642 bytes (65.0% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:02:23 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Building file: ../MC1drivers/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC1drivers/keypad.d" -MT"MC1drivers/keypad.o" -c -o "MC1drivers/keypad.o" "../MC1drivers/keypad.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/keypad.h:5,
+                 from ../MC1drivers/keypad.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC1drivers/keypad.c: In function 'Keypad_getPressedKey':
+../MC1drivers/keypad.c:20: warning: suggest parentheses around + or - inside shift
+../MC1drivers/keypad.c:22: warning: suggest parentheses around + or - inside shift
+Finished building: ../MC1drivers/keypad.c
+ 
+Building file: ../MC1drivers/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC1drivers/lcd.d" -MT"MC1drivers/lcd.o" -c -o "MC1drivers/lcd.o" "../MC1drivers/lcd.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/lcd.h:6,
+                 from ../MC1drivers/lcd.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC1drivers/lcd.c: In function 'LCD_intgerToString':
+../MC1drivers/lcd.c:144: warning: implicit declaration of function 'itoa'
+Finished building: ../MC1drivers/lcd.c
+ 
+Building file: ../MC1drivers/timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC1drivers/timers.d" -MT"MC1drivers/timers.o" -c -o "MC1drivers/timers.o" "../MC1drivers/timers.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../MC1drivers/timers.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC1drivers/timers.c: In function 'Timer_0_setCompareCallBack':
+../MC1drivers/timers.c:123: warning: function return types not compatible due to 'volatile'
+../MC1drivers/timers.c: In function 'Timer_0_setOverflowCallBack':
+../MC1drivers/timers.c:129: warning: function return types not compatible due to 'volatile'
+../MC1drivers/timers.c: In function 'Timer_2_setCompareCallBack':
+../MC1drivers/timers.c:204: warning: function return types not compatible due to 'volatile'
+../MC1drivers/timers.c: In function 'Timer_2_setOverflowCallBack':
+../MC1drivers/timers.c:210: warning: function return types not compatible due to 'volatile'
+../MC1drivers/timers.c: In function 'Timer_1_setCompareACallBack':
+../MC1drivers/timers.c:307: warning: function return types not compatible due to 'volatile'
+../MC1drivers/timers.c: In function 'Timer_1_setCompareBCallBack':
+../MC1drivers/timers.c:313: warning: function return types not compatible due to 'volatile'
+../MC1drivers/timers.c: In function 'Timer_1_setOverflowCallBack':
+../MC1drivers/timers.c:319: warning: function return types not compatible due to 'volatile'
+Finished building: ../MC1drivers/timers.c
+ 
+Building file: ../MC1drivers/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC1drivers/uart.d" -MT"MC1drivers/uart.o" -c -o "MC1drivers/uart.o" "../MC1drivers/uart.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/uart.h:8,
+                 from ../MC1drivers/uart.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC1drivers/uart.c: In function 'UART_setRecieveCompleteCallback':
+../MC1drivers/uart.c:136: warning: function return types not compatible due to 'volatile'
+../MC1drivers/uart.c: In function 'UART_setTransmitCompleteCallback':
+../MC1drivers/uart.c:142: warning: function return types not compatible due to 'volatile'
+../MC1drivers/uart.c: In function 'UART_setDataEmptyCallback':
+../MC1drivers/uart.c:148: warning: function return types not compatible due to 'volatile'
+Finished building: ../MC1drivers/uart.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC1drivers/micro_config.h:22,
+                 from ../MC1drivers/timers.h:7,
+                 from ../main.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:14: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC1_HMI.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC1_HMI.map -mmcu=atmega16 -o "FINAL_Proj_MC1_HMI.elf"  ./MC1drivers/keypad.o ./MC1drivers/lcd.o ./MC1drivers/timers.o ./MC1drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC1_HMI.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC1_HMI.elf  >"FINAL_Proj_MC1_HMI.lss"
+Finished building: FINAL_Proj_MC1_HMI.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   11190 bytes (68.3% Full)
+(.text + .data + .bootloader)
+
+Data:        192 bytes (18.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:02:25 **** Incremental Build of configuration Debug for project FINAL_Proj_MC2_control_ECU ****
+make all 
+Building file: ../MC2drivers/external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/external_eeprom.d" -MT"MC2drivers/external_eeprom.o" -c -o "MC2drivers/external_eeprom.o" "../MC2drivers/external_eeprom.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/external_eeprom.h:6,
+                 from ../MC2drivers/external_eeprom.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC2drivers/external_eeprom.c: In function 'EEPROM_writeString':
+../MC2drivers/external_eeprom.c:110: warning: control reaches end of non-void function
+../MC2drivers/external_eeprom.c: In function 'EEPROM_readString':
+../MC2drivers/external_eeprom.c:128: warning: control reaches end of non-void function
+Finished building: ../MC2drivers/external_eeprom.c
+ 
+Building file: ../MC2drivers/i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/i2c.d" -MT"MC2drivers/i2c.o" -c -o "MC2drivers/i2c.o" "../MC2drivers/i2c.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/i2c.h:7,
+                 from ../MC2drivers/i2c.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MC2drivers/i2c.c
+ 
+Building file: ../MC2drivers/motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/motor.d" -MT"MC2drivers/motor.o" -c -o "MC2drivers/motor.o" "../MC2drivers/motor.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/motor.h:6,
+                 from ../MC2drivers/motor.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MC2drivers/motor.c
+ 
+Building file: ../MC2drivers/timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/timers.d" -MT"MC2drivers/timers.o" -c -o "MC2drivers/timers.o" "../MC2drivers/timers.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../MC2drivers/timers.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC2drivers/timers.c: In function 'Timer_0_setCompareCallBack':
+../MC2drivers/timers.c:123: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_0_setOverflowCallBack':
+../MC2drivers/timers.c:129: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_2_setCompareCallBack':
+../MC2drivers/timers.c:204: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_2_setOverflowCallBack':
+../MC2drivers/timers.c:210: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_1_setCompareACallBack':
+../MC2drivers/timers.c:307: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_1_setCompareBCallBack':
+../MC2drivers/timers.c:313: warning: function return types not compatible due to 'volatile'
+../MC2drivers/timers.c: In function 'Timer_1_setOverflowCallBack':
+../MC2drivers/timers.c:319: warning: function return types not compatible due to 'volatile'
+Finished building: ../MC2drivers/timers.c
+ 
+Building file: ../MC2drivers/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"MC2drivers/uart.d" -MT"MC2drivers/uart.o" -c -o "MC2drivers/uart.o" "../MC2drivers/uart.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/uart.h:8,
+                 from ../MC2drivers/uart.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MC2drivers/uart.c: In function 'UART_setRecieveCompleteCallback':
+../MC2drivers/uart.c:136: warning: function return types not compatible due to 'volatile'
+../MC2drivers/uart.c: In function 'UART_setTransmitCompleteCallback':
+../MC2drivers/uart.c:142: warning: function return types not compatible due to 'volatile'
+../MC2drivers/uart.c: In function 'UART_setDataEmptyCallback':
+../MC2drivers/uart.c:148: warning: function return types not compatible due to 'volatile'
+Finished building: ../MC2drivers/uart.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../MC2drivers/micro_config.h:22,
+                 from ../MC2drivers/timers.h:7,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:13: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:42: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../main.c:42: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness
+Finished building: ../main.c
+ 
+Building target: FINAL_Proj_MC2_control_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,FINAL_Proj_MC2_control_ECU.map -mmcu=atmega16 -o "FINAL_Proj_MC2_control_ECU.elf"  ./MC2drivers/external_eeprom.o ./MC2drivers/i2c.o ./MC2drivers/motor.o ./MC2drivers/timers.o ./MC2drivers/uart.o  ./main.o   
+Finished building target: FINAL_Proj_MC2_control_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S FINAL_Proj_MC2_control_ECU.elf  >"FINAL_Proj_MC2_control_ECU.lss"
+Finished building: FINAL_Proj_MC2_control_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC2_control_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10182 bytes (62.1% Full)
+(.text + .data + .bootloader)
+
+Data:         46 bytes (4.5% Full)
 (.data + .bss + .noinit)
 
 
