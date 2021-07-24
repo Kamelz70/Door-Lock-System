@@ -1,0 +1,36 @@
+#include "Mydrivers/timers.h"
+#include "Mydrivers/uart.h"
+void func(){
+    PORTC^=0X01;
+}
+
+void Timer_1_delaySeconds(uint16 seconds)
+{
+    Timer_1_ConfigType cfg = {F_CPU_1024, 7812, 0, CTC_OCR1A, NORMAL_OCn_DISCONNECTED, NORMAL_OCn_DISCONNECTED};
+    Timer_1_init(&cfg);
+    for (uint8 i = 0; i < seconds; i++)
+    {
+    while (BIT_IS_CLEAR(TIFR, OCF1A))
+        ;
+    SET_BIT(TIFR, OCF1A);
+    Timer_1_setCounterValue(0); 
+    }
+    
+    Timer_1_deInit();
+}
+void main()
+{
+	uint8 k=0;
+LCD_init();
+UART_ConfigType cfg={ASYNCHRONOUS,DISABLE_PARITY,9600,UART_8_BIT,UART_1_STOP_BIT,TRANSMITTER_RECIEVER,RISING_T_FALLING_R};
+UART_init(&cfg);
+        Timer_1_delaySeconds(1);
+
+    while(1)
+    {
+        UART_sendData('a');
+        Timer_1_delaySeconds(5);
+    }
+
+
+}

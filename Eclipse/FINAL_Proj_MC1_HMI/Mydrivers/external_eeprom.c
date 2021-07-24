@@ -1,0 +1,128 @@
+#include "external_eeprom.h"
+#include "i2c.h"
+
+/*******************************************************************************
+ *                               Function Definitions                                    *
+ *******************************************************************************/
+
+void EEPROM_init(void)
+{
+    /*Init. the twi module*/
+    TWI_ConfigType cfg = {EEPROM_TWI_BIT_RATE, EEPROM_TWI_PRE_SCALER, 0X01, GENERAL_CALL_OFF};
+    TWI_init(&cfg);
+}
+uint8 EEPROM_writeByte(uint16 u16addr, uint8 u8data)
+{
+    /*send a start bit*/
+    TWI_start();
+
+    /*check if start bit is successfully sent*/
+    if (TWI_getStatus() != TW_START)
+        return ERROR;
+
+    /*send address of eeprom along with 3 bits from memory address with a r/w bit of 0 to write*/
+    TWI_write((uint8)(0xA0 | ((u16addr & 0x700) >> 7)));
+
+    /*make sure address is sent*/
+    if (TWI_getStatus() != TW_MT_SLA_W_ACK)
+        return ERROR;
+
+    /*send rest of memory address to write into*/
+    TWI_write((uint8)u16addr);
+
+    /*make sure address is sent*/
+    if (TWI_getStatus() != TW_MT_DATA_ACK)
+        return ERROR;
+
+    /*send our data to be written in the eeprom*/
+    TWI_write(u8data);
+
+    /*make sure data is sent*/
+    if (TWI_getStatus() != TW_MT_DATA_ACK)
+        return ERROR;
+
+    /*send stop bit*/
+    TWI_stop();
+
+    return SUCCESS;
+}
+uint8 EEPROM_readByte(uint16 u16addr, uint8 *u8data)
+{
+    /*send a start bit*/
+    TWI_start();
+
+    /*check if start bit is successfully sent*/
+    if (TWI_getStatus() != TW_START)
+        return ERROR;
+
+    /*send address of eeprom along with 3 bits from memory address with a r/w bit of 0 to write*/
+    TWI_write((uint8)0xA0 | ((u16addr & 0x700) >> 7));
+
+    /*make sure address is sent*/
+    if (TWI_getStatus() != TW_MT_SLA_W_ACK)
+        return ERROR;
+
+    /*send rest of memory address to write into*/
+    TWI_write((uint8)u16addr);
+
+    /*make sure address is sent*/
+    if (TWI_getStatus() != TW_MT_DATA_ACK)
+        return ERROR;
+
+    /*send another start bit*/
+    TWI_start();
+
+    /*check if repeated start bit is successfully sent*/
+    if (TWI_getStatus() != TW_REP_START)
+        return ERROR;
+
+    /*send address of eeprom along with 3 bits from memory address with a r/w bit of 1 to read*/
+    TWI_write((uint8)0xA0 | (((u16addr & 0x700) >> 7) | 1));
+    if (TWI_getStatus() != TW_MT_SLA_R_ACK)
+        return ERROR;
+
+    /*read data and send Nack*/
+    *u8data = TWI_readWithNack();
+    if (TWI_getStatus() != TW_MR_DATA_NACK)
+        return ERROR;
+
+    /*send stop bit*/
+    TWI_stop();
+
+    return SUCCESS;
+}
+
+uint8 EEPROM_writeString(uint16 u16addr,uint8* string)
+{
+    uint16 i=0;
+    /*Write Each Byte of String untill we find a Null terminator*/
+    while (string[i] != '\0')
+    {
+        _delay_ms(10);/*delay for processing*/
+        if(EEPROM_writeByte(u16addr + i, string[i])==ERROR)
+        {
+            return ERROR;
+        }
+        i++;
+    }
+    _delay_ms(10);
+    EEPROM_writeByte(u16addr + i, '#');/*insert a Hash in last Byte to endicate end of string*/
+}
+
+uint8 EEPROM_readString(uint16 u16addr,uint8* string)
+{
+    uint16 i = 0;
+    _delay_ms(10);
+    /*READ Each Byte of String untill we find a Hash*/
+    EEPROM_readByte(u16addr + i, string + i);
+    while (string[i] != '#')
+    {
+        _delay_ms(10);
+        i++;
+        if(EEPROM_readByte(u16addr + i, string + i)==ERROR)
+        {return ERROR;
+        }
+    }
+    /*Replace hach with null Terminator*/
+    string[i] = '\0';
+}

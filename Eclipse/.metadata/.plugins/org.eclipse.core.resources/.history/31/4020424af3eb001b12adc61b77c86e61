@@ -1,0 +1,36 @@
+#include "Mydrivers/timers.h"
+#include "Mydrivers/keypad.h"
+void func(){
+    PORTC^=0X01;
+}
+
+void Timer_1_delaySeconds(uint16 seconds)
+{
+    Timer_1_ConfigType cfg = {F_CPU_1024, 7812, 0, CTC_OCR1A, NORMAL_OCn_DISCONNECTED, NORMAL_OCn_DISCONNECTED};
+    Timer_1_init(&cfg);
+    for (uint8 i = 0; i < seconds; i++)
+    {
+    while (BIT_IS_CLEAR(TIFR, OCF1A))
+        ;
+    SET_BIT(TIFR, OCF1A);
+    Timer_1_setCounterValue(0); 
+    }
+    
+    Timer_1_deInit();
+}
+void main()
+{
+
+    DDRC=0X01;
+    while(1)
+    {
+
+        Timer_1_delaySeconds(3);
+
+        PORTC^=0X01;
+    }
+
+
+}
+
+

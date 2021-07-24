@@ -1,0 +1,20 @@
+21:18:13 **** Incremental Build of configuration Debug for project FINAL_Proj_MC1_HMI ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 FINAL_Proj_MC1_HMI.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   14098 bytes (86.0% Full)
+(.text + .data + .bootloader)
+
+Data:        202 bytes (19.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:18:13 Build Finished. 0 errors, 0 warnings. (took 278ms)
+

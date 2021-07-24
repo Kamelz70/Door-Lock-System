@@ -1,0 +1,67 @@
+#include "timers.h"
+
+
+/*          Global Variables        */
+static volatile void (*g_Timer_0_Overflow_callBackPtr)(void) = NULL_PTR;
+static volatile void (*g_Timer_0_Compare_callBackPtr)(void) = NULL_PTR;
+
+
+/*          ISRs        */
+
+ISR(TIMER0_COMP_vect)
+{
+    if (g_Timer_0_Compare_callBackPtr != NULL_PTR)
+    {
+        (*g_Timer_0_Compare_callBackPtr)();
+    }
+}
+
+
+/*Initialize timer 0 configuration*/
+void Timer_0_init(const Timer_0_2_ConfigType * const cfg_ptr)
+{
+    /*insert all configuration settings in the control register*/
+    TCCR0= ((~(cfg_ptr->mode&0b01))<<7)|((cfg_ptr->mode&0b01)<<6)|(cfg_ptr->com_mode<<4)|((cfg_ptr->mode&0b10)<<3)|cfg_ptr->clock;
+    
+    /*insert compare value to compare register*/
+    OCR0=cfg_ptr->compare_value;
+    
+    /*Initialize current counter value to 0*/
+    TCNT0=0;
+}
+
+  /*Set output compare value for timer0*/
+void Timer_0_setCompareValue(const uint8 compare_val)
+{
+    /*insertcompare valuse to compare register*/
+    OCR0=compare_value;
+}
+
+ /*Set current counter value for timer0*/
+void Timer_0_setCounterValue(const uint8 counter_val)
+{
+    /*insert current counter value*/
+    TCNT0=counter_val;
+}
+
+  /*Set compare mode isr callback*/
+void Timer_0_setCompareCallBack(void (*f_ptr)(void))
+{
+
+}
+
+
+
+
+
+
+
+
+void Timer_0_deInit(void)
+{
+    /*reset all registers and disable all interrupts*/
+    TCCR0=0;
+    OCR0=0;
+    TCNT0=0;
+    TIMSK&=~(0X03);
+}

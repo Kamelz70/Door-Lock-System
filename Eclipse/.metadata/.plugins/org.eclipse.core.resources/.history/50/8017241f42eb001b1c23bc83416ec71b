@@ -1,0 +1,21 @@
+#include "Mydrivers/timers.h"
+
+void func(){
+    PORTC^=0X01;
+}
+
+void main()
+{
+
+    DDRC=0X01;
+    Timer_0_2_ConfigType cfg={F_CPU_1024,255,CTC,NORMAL_OC0_DISCONNECTED};
+    Timer_0_init(&cfg);   
+    Timer_0_EnableCompareInterrupt();   
+    Timer_0_setCompareCallBack(func);  /*Set compare mode isr callback*/
+    SREG=(1<<7);
+    while(1);
+
+
+}
+
+
